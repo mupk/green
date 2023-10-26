@@ -1,0 +1,78 @@
+		/* ЭТО ФАЙЛ СТИЛЕЙ */
+		table
+		{
+			height: 25px;
+			width: 100%;
+			background-color: rgb(0, 57, 22);
+			color: white;
+			margin: 0 0 0 0;
+			padding: 0 0 0 0;
+		}
+		tbody
+		{
+			width: 100%;
+			margin: 0 0 0 0;
+			padding: 0 0 0 0;
+		}
+		tr
+		{
+			width: 100%;
+			margin: 0 0 0 0;
+			padding: 0 0 0 0;
+		}
+		td
+		{
+
+		}
+		h1
+		{
+			color: blue;
+		}
+		h2
+		{
+			color: lightblue;
+		}
+		a.red
+		{
+			color: red; 
+			text-decoration: none;
+		}
+		a.blue
+		{
+			color: rgb(205,138,89);
+			text-decoration: none;
+		}
+		a.red :visited
+		{
+			color: red; 
+			text-decoration: none;
+		}
+		a.blue :visited
+		{
+			color: #009999; 
+			text-decoration: none;
+		}
+		body
+		{
+			background-color: black;
+		}
+		img.header
+		{
+			position: absolute;
+			z-index: 2;
+			height: 25px;
+		}
+		button
+		{
+			z-index: 3;
+			background-color: brown; 
+			color:white; 
+			width: 340px;
+			height: 60px;
+			border-radius: 8px;
+			border: 3px;
+			position: absolute;
+			left: 940px;
+			top: 480px;
+			font-size: 40px;
+		}
