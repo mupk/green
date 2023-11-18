@@ -1,9 +1,14 @@
 		/* ЭТО ФАЙЛ СТИЛЕЙ */
+		body
+		{
+			background-color: rgb(34, 33, 28);
+		}
+
 		table
 		{
-			height: 25px;
+			height: 45px;
 			width: 100%;
-			background-color: rgb(0, 57, 22);
+			background-color: rgb(255, 244, 216);
 			color: white;
 			margin: 0 0 0 0;
 			padding: 0 0 0 0;
@@ -22,7 +27,12 @@
 		}
 		td
 		{
-
+			width: 17%;
+			text-align: center;
+		}
+		td:hover
+		{
+			background-color: #f7f080;
 		}
 		h1
 		{
@@ -32,47 +42,83 @@
 		{
 			color: lightblue;
 		}
-		a.red
+		p, a
 		{
-			color: red; 
+			color: white;
+			font-size: 18px;
+			font-family: Cambria;
+			text-align: left;
+		}
+		a
+		{
+			font-weight: bold;
 			text-decoration: none;
 		}
-		a.blue
+		a.header
 		{
-			color: rgb(205,138,89);
+			color: #469422; 
 			text-decoration: none;
+			font-size: 18px;
+			font-family: Georgia;
+			font-stretch: expanded;
+			font-weight: bold;
+
 		}
-		a.red :visited
+		a:hover
 		{
-			color: red; 
-			text-decoration: none;
+			color: green; 
+			text-decoration: underline;
 		}
-		a.blue :visited
+		a:active
 		{
-			color: #009999; 
-			text-decoration: none;
+			color:green;
+			background-color: #c2fec2;
 		}
-		body
-		{
-			background-color: black;
-		}
+
 		img.header
 		{
-			position: absolute;
+			position: relative;
 			z-index: 2;
-			height: 25px;
+			height: 35px;
+			padding-left: 50px;
 		}
 		button
 		{
 			z-index: 3;
-			background-color: brown; 
-			color:white; 
+			background-color: rgb(255, 244, 216); 
+			color:green; 
 			width: 340px;
 			height: 60px;
 			border-radius: 8px;
-			border: 3px;
+			border: outset 3px;
 			position: absolute;
 			left: 940px;
 			top: 480px;
-			font-size: 40px;
+			font-size: 28px;
+			font-family: Georgia;
+		}
+		button:hover
+		{
+			background-color: #f7f080;
+		}
+		div.content
+		{
+			background-color: rgb(45, 42, 36);
+			width: 80%;
+			margin: 0 0 0 10%;
+			padding: 0 0 0 0;
+		}
+		div.info
+		{
+			background-color: rgb(49, 46, 40);
+			width: 30%;
+			margin: 15px 1% 15px 1%;
+			padding: 0 5px 0 5px;
+			display: inline-block;
+			text-align: center;
+			vertical-align: top;
+		}
+		footer
+		{
+			margin: 0 10% 0 10%;
 		}
