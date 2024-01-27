@@ -3,20 +3,87 @@
  <head>
   <meta charset="utf-8" />
   <title>hover</title>
-  <style>
-   a:link {
-    color: #0000d0; /* Цвет ссылок */
-    padding: 2px; /* Поля вокруг текста */ 
-   }
-   a:hover {
-    background: #786b59; /* Цвет фона под ссылкой */ 
-    color: #ffe; /* Цвет ссылки */ 
-   } 
-  </style>
+  <link rel="stylesheet" type="text/css" href="main.css">
  </head>
- <body>
-  <p><a href="1.html">Ссылка 1</a></p>
-  <p><a href="2.html">Ссылка 2</a></p>
-  <p><a href="3.html">Ссылка 3</a></p> 
+ <body style="background: linear-gradient(to top, #b5bdc8 0%, #828c95 36%, #28343b 100%);">
+ 	<header>
+		<a href="index.html"><img class="header" src="img/logo.png" width="50px" alt=""></a>
+		<a class="header" href="about.html">О нас</a>
+		<a class="header" href="panels.html">Панели</a>
+		<a class="header" href="montage.html">Монтаж</a>
+		<a class="header" href="contacts.html">Контакты</a>
+		<div>
+		<a class="header" href="cart.html"><img class="header" width="50px;" src="img/cart.png"></a>
+		<a class="header" href="cart.html"><img class="header" width="50px;" src="img/cart.png"></a>
+		<a class="header" href="cart.html"><img class="header" width="50px;" src="img/cart.png"></a>
+		</div>
+	</header>
+ <form action="" style="background: linear-gradient(-45deg, rgb(123,0,123), rgb(0,255,255)">
+		<select name="" id="" style="width: 160px;">
+			<option value="">Армения</option>
+			<option value="">Беларусь</option>
+			<option value="">Грузия</option>
+			<option value="">Россия</option>
+			<option value="">Украина</option>
+		</select>
+		<br><br>
+		<input type="text" placeholder="Введите Имя">
+		<br><br>
+		<input type="email" placeholder="Введите Почту">
+		<br><br>
+		<input type="phone" placeholder="Введите Телефон">
+		<br><br>
+		<label>
+			<input type="radio" name="var">Консультация специалиста
+		</label>
+		<br>
+		<label>
+			<input type="radio" name="var">Выезд на место
+		</label>
+		<br>
+		<label>
+			<input type="radio" name="var">Самовывоз со склада
+		</label>
+		<br><br>
+		<label>
+			<input type="checkbox" checked="">Я согласен с условиями Соглашения
+		</label>
+			<br>
+		<label>
+			<input type="checkbox" checked="">Мне есть 18 лет
+		</label>
+			<br>
+		<label>	
+			<input type="checkbox" >Я ивляюсь резидентом клуба
+		</label>
+		<br><br>
+		<input type="submit">
+		
+		<a href="#a1"><input type="button" value="BLINK"></a>
+	</form>
+
+	<div style="min-height: 100px;">
+		<p id="a1">Это якорь</p>
+	</div>
+
+	<footer>
+		<br>
+		<hr>
+		<!--Соц.сети-->
+		<div>
+			<br>
+			<a href="vk.com"><img src="img/vk.png" height="40px" alt=""></a>&nbsp;&nbsp;
+			<a href="facebook.com"><img src="img/fb.png" alt=""></a>&nbsp;&nbsp;
+			<a href="x.com"><img src="img/xx.png" alt=""></a>&nbsp;&nbsp;
+			<a href="reddit.com"><img src="img/rt.png" alt=""></a>&nbsp;&nbsp;
+			<a href="google.com"><img src="img/gg.png" alt=""></a>&nbsp;&nbsp;
+		</div>
+		<!--Ссылки-->
+		<div> </div>
+		<!--Copyright-->
+		<div> 
+			All seasons &copy 2023 :: All rights reserved
+		</div>
+	</footer>
  </body>
 </html>

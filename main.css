@@ -2,10 +2,14 @@
 		body
 		{
 			background-color: rgb(34, 33, 28);
+			min-height: 600px;
+			overflow-x: hidden;
 		}
 
 		table
 		{
+/*			position: fixed;
+			z-index: 9;				*/
 			height: 45px;
 			width: 100%;
 			background-color: rgb(255, 244, 216);
@@ -84,6 +88,7 @@
 		}
 		button
 		{
+			position: absolute;
 			z-index: 3;
 			background-color: rgb(255, 244, 216); 
 			color:green; 
@@ -91,7 +96,6 @@
 			height: 60px;
 			border-radius: 8px;
 			border: outset 3px;
-			position: absolute;
 			left: 940px;
 			top: 480px;
 			font-size: 28px;
@@ -100,6 +104,7 @@
 		button:hover
 		{
 			background-color: #f7f080;
+			transform: scale(1.2);
 		}
 		div.content
 		{
@@ -118,7 +123,72 @@
 			text-align: center;
 			vertical-align: top;
 		}
+		form
+		{
+			border: 3px solid green;
+			border-radius: 15px;
+			/*text-align: center;*/
+			margin-top: 25px;
+			margin-left: calc(30vw);
+			margin-right: calc(30vw);
+			padding: 15px 15px 15px 150px;
+
+		}
+		input:focus
+		{
+			background-color: yellow;
+		}
+		input:checked + span
+		{
+			background-color: yellow;
+		}
+		input
+		header
+		{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
 		footer
 		{
 			margin: 0 10% 0 10%;
+			color: white;
+		}
+		#grid
+		{
+			min-height: 500px; 
+			display: grid;
+			grid-template-areas: 
+			'one one one three three'
+			'one one one four four'
+			'two two two four four'
+			'two two two five five';
+			grid-gap: 5px;
+		}
+		#grid1 {grid-area: one;}
+		#grid2 {grid-area: two;}	
+		#grid3 {grid-area: three;}
+		#grid4 {grid-area: four;}
+		#grid5 {grid-area: five;}
+		@keyframes poster
+		{
+			0% {margin-left: -180px; margin-right: 0px;}
+			50% {margin-left: 0px; margin-right: -180px; opacity:0.9;}
+			100% {margin-left: -180px; margin-right: 0px;}
+		}
+		#poster
+		{
+			background-color: grey;
+			animation: poster 10s ease-in-out infinite;
+		}
+		audio
+		{
+			position: absolute;
+			left: 0;
+			top: 0;
+			transition: left 0.2s;
+		}
+		audio:hover
+		{
+			left: 15px;
 		}
